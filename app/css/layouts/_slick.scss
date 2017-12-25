@@ -5,9 +5,16 @@
         a{
             position: relative;
             display: block;
-            width: per(556, 768);
+            width: per(556, 768);            
             img{
                 width: 100%;
+            }
+        }
+        .slick-slide{
+            opacity: 0.4;
+            transition-duration: 0.3s;
+            &.slick-active{
+                opacity: 1;
             }
         }
         .slick-dots{
