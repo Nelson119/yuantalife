@@ -1,0 +1,36 @@
+[role=slick]{
+    .viewport{
+        width: 100%;
+        margin: em(32,14) auto 0;
+        a{
+            position: relative;
+            display: block;
+            width: per(556, 768);
+            img{
+                width: 100%;
+            }
+        }
+        .slick-dots{
+            bottom: em(20, 14);
+            word-spacing: 1em;
+            button{
+                font-size: 1em;
+                width:em(8,14);
+                height: em(8,14);
+                background: #fff;
+                border-radius: em(8,14);
+                text-indent: -999em;
+                transition-duration: 0.2s;
+            }
+            .slick-active{
+                button{
+                    width: em(32,14);
+                }
+            }
+            li{
+                width: auto;
+            }
+        }
+    }
+}
+
