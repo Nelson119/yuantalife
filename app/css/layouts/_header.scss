@@ -1,0 +1,62 @@
+header {
+	background: #fff;
+	.member{
+		height:  em(72, 14);
+	}
+	.logo{
+		top:0;
+		left:0;
+		margin: em(21, 20) 0 0 em(21, 20);
+		height:  em(30, 20);
+		width:  em(144, 20);
+		position: absolute;
+
+		img, svg{
+			@include SubItem();
+		}
+	}
+	nav{
+		height:  em(40, 14);
+		padding-left: em(62, 14);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#073c7c+0,007ec7+50,0080d0+100 */
+		background: #073c7c; /* Old browsers */
+		background: -moz-linear-gradient(left, #073c7c 0%, #007ec7 50%, #0080d0 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #073c7c 0%,#007ec7 50%,#0080d0 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #073c7c 0%,#007ec7 50%,#0080d0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073c7c', endColorstr='#0080d0',GradientType=1 ); /* IE6-9 */
+		a{
+			color: #fff;
+			line-height: em(20, 14);
+			padding: 0 em(20, 14);
+
+			&:hover, &.active{
+				color: rgb(255,202,88);
+			}
+
+			&+a{
+				border-left: 1px solid rgb(98,167,215);
+			}
+		}
+
+	}
+	.member{
+		color: rgb(123,123,123);
+		ul{
+			line-height: em(36, 14);
+			li{
+				line-height: 1.2em;
+				height: em(36, 14);
+				display: block;
+				img,svg{
+					width: em(36, 14);
+					height: em(36, 14);
+					display: inline-block;
+				}
+				b{
+					color: rgb(211,0,0);
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
