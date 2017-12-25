@@ -3,9 +3,9 @@
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
-	.st1{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
-	.st2{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
+	.product0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.product1{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
+	.product2{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
 </style>
 <g>
 	<defs>
@@ -15,7 +15,7 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<rect x="3" y="-5" class="st0" width="24" height="28"/>
+	<rect x="3" y="-5" class="product0" width="24" height="28"/>
 </g>
 <g>
 	<defs>
@@ -24,7 +24,7 @@
 	<clipPath id="SVGID_4_">
 		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
 	</clipPath>
-	<rect x="-0.2" y="-2.2" class="st1" width="24" height="28"/>
+	<rect x="-0.2" y="-2.2" class="product1" width="24" height="28"/>
 </g>
 <g>
 	<defs>
@@ -33,6 +33,6 @@
 	<clipPath id="SVGID_6_">
 		<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
 	</clipPath>
-	<rect x="-3" y="1" class="st2" width="24" height="28"/>
+	<rect x="-3" y="1" class="product2" width="24" height="28"/>
 </g>
 </svg>
