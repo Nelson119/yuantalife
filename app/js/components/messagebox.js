@@ -5,17 +5,9 @@
 	key-spacing ,curly, no-shadow, no-return-assign, no-redeclare, no-unused-vars,
 	eqeqeq, no-extend-native, quotes , no-inner-declarations*/
 /*global app, TweenMax*/
-app.partial.slick = function($, container){
+app.partial.messagebox = function($, container){
 	container.on('page:update' , function(page, menu){
-        container.addClass('loaded');
-        $('.slick', container).slick({
-            arrows: false,
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            centerMode: true,
-            variableWidth: true
-        });
+		container.addClass('loaded');
+		$('.veno').venobox().trigger('click');
 	});
 };

@@ -1,0 +1,37 @@
+[role=messagebox]{
+    height: 100%;
+    .viewport{
+        // width: per(568, 768);
+        overflow: hidden;
+        height: 100%;
+        .title{
+            padding: 0 em(12,14);
+        }
+        h3{
+            font-size: em(18, 14);
+            margin-top: 0;
+            margin-bottom: em(8,18);
+            color: #00538F;
+            font-weight: 800;
+        }
+        .date{
+            font-size: em(12,14);
+            color: rgb(123,123,123);
+            line-height: 1;
+        }
+        .scroll{
+            padding: 0 em(12,14) 0 em(12,14);
+            height: 25em;
+            height: calc(100% - #{em(81,14)});
+            overflow: auto;
+            >*{
+                margin-bottom: 1.5em;
+            }
+        }
+        hr{
+            margin: em(12,14) 0 em(20,14);
+            border-color: rgb(216,216,216);
+        }
+    }
+}
+
