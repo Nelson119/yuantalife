@@ -8,6 +8,8 @@
 app.partial.slick = function($, container){
 	container.on('page:update' , function(page, menu){
         container.addClass('loaded');
+        var opt = $('.slick', container).data();
+        // console.log(opt);
         $('.slick', container).slick({
             arrows: false,
             dots: true,
@@ -15,7 +17,9 @@ app.partial.slick = function($, container){
             speed: 300,
             slidesToShow: 1,
             centerMode: true,
-            variableWidth: true
+            variableWidth: true,
+            autoplay: opt.autoplay,
+            autoplaySpeed: opt.autoplaySpeed
         });
 	});
 };
