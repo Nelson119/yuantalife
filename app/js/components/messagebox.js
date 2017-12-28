@@ -8,6 +8,6 @@
 app.partial.messagebox = function($, container){
 	container.on('page:update' , function(page, menu){
 		container.addClass('loaded');
-		$('.veno').venobox().trigger('click');
+		$('.veno').venobox();//.trigger('click');
 	});
 };
