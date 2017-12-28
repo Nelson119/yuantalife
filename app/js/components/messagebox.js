@@ -8,6 +8,13 @@
 app.partial.messagebox = function($, container){
 	container.on('page:update' , function(page, menu){
 		container.addClass('loaded');
-		$('.veno').venobox();//.trigger('click');
+		var vb = $('.veno').venobox({
+			cb_post_open  : function(obj, gallIndex, thenext, theprev){
+				$('.veno-close').on('click', function(){
+					vb.VBclose();
+				});
+			},
+		
+		});//.trigger('click');
 	});
 };

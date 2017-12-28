@@ -1,5 +1,6 @@
 [role=messagebox]{
     height: 100%;
+    position: relative;
     .viewport{
         // width: per(568, 768);
         overflow: hidden;
@@ -32,6 +33,18 @@
             margin: em(12,14) 0 em(20,14);
             border-color: rgb(216,216,216);
         }
+    }
+    .veno-close{
+        color: #fff;
+        background: #666;
+        width: 1.5em;
+        height: 1.5em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 1.35em;
+        text-align: center;
+        font-size: em(24,14);
     }
 }
 

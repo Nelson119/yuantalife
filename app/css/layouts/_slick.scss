@@ -6,15 +6,16 @@
             position: relative;
             display: block;
             // width: per(556, 768); 
-            width: auto;
-            height: em(290,14);           
+            // width: 50vw;
+            // max-width: 1366;
             img{
-                height: 100%;
-                width: auto;
+                width: 50%;
+                width: 50vw;
+                max-width: 1366;
             }
         }
         .slick-slide{
-            opacity: 0.4;
+            opacity: 0.2;
             transition-duration: 0.3s;
             &.slick-active{
                 opacity: 1;
