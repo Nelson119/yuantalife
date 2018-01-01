@@ -70,37 +70,6 @@
             border-radius: 0;
             background: none;
         }
-        .btn{
-            font-size: em(16,14);
-            padding: 0 em(30,16);
-            line-height: em(28,16);
-            height: em(28,16);
-            border-radius: em(20,16);
-            background: #BB925B;
-            color: #fff;
-            &:focus{
-                outline: none;
-            }
-            &:hover{
-                background: #fff;
-                color: #BB925B;
-                box-shadow: 0 0 0 1px #BB925B;
-            }
-            &.small{
-                font-size: 1em;
-                padding: 0 em(15,14);
-                line-height: em(24,14);
-                height: em(24,14);
-                border-radius: em(20,14);
-                background: #fff;
-                color: #BB925B;
-                box-shadow: 0 0 0 1px #BB925B;
-                &:hover{
-                    background: #BB925B;
-                    color: #fff;
-                }
-            }
-        }
 
     }
     .warning{
@@ -109,7 +78,6 @@
         width: 21em;
     }
     .anounce{
-        padding-top: em(32,14);
         width: em(434, 14);
         margin: 0 auto em(32,14);
         color: #7B7B7B;
