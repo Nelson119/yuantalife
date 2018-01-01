@@ -11,6 +11,10 @@
                     color: rgb(2,93,163);
                     font-weight: bold;
                 }
+                img{
+                    width: em(150,14);
+                    height: em(150,14);
+                }
             }
             .pull-right{
                 width: per(370 , (186+12+370));
@@ -39,12 +43,7 @@
                     }
                     .downloadsvg{
                         display: inline-block;
-                        .download0{clip-path:url(#downloadSVGID_2_);}
-                        .download1{clip-path:url(#downloadSVGID_4_);fill:#BB925B;}
-                        .download2{clip-path:url(#downloadSVGID_6_);}
-                        .download3{clip-path:url(#downloadSVGID_8_);fill:#BB925B;}
-                        .download4{clip-path:url(#downloadSVGID_10_);}
-                        .download5{clip-path:url(#downloadSVGID_12_);fill:none;stroke:#F7F7F7;stroke-width:4;stroke-miterlimit:10;}
+                        .download0{fill:#BB925B;}
                     }
                 }
             }
@@ -76,7 +75,7 @@
             .product2{fill:#fff}
         }
         .downloadsvg{
-            .download1,.download2,.download3,.download4,.download5,.download0{fill:#fff}
+            .download0{fill:#fff;}
         }
     }
     #areaTab1:checked ~ .arealist [data-for=areaTab1],

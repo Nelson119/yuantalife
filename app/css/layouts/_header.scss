@@ -1,7 +1,11 @@
 header {
 	background: #fff;
-	.member{
-		height:  em(72, 14);
+	height:  em(72, 14);
+	h2{
+		font-size: em(16,14);
+		color: #00538F;
+		padding: em(23,16) em(30,16) em(27,16) 0;
+		margin: 0;
 	}
 	.logo{
 		top:0;
@@ -53,7 +57,59 @@ header {
 					height: auto;
 					opacity: 1;
 					filter:	none;
+					overflow: visible;
 					transition: height 0s 0s, opacity 0.2s 0s, filter 0s 0s;
+					li{
+						position: relative;
+						ul{
+							top: 0;
+							left: 100%;
+							height: auto;
+							opacity: 1;
+							filter:	none;
+							&:before{
+								content:'\e801';
+								position: absolute;
+								left: -2em;
+								top: 0.1em;
+								color: #fff;
+								font-family: "fontello";
+								font-style: normal;
+								font-weight: normal;
+								speak: none;
+							   
+								display: inline-block;
+								text-decoration: inherit;
+								width: 1em;
+								margin-right: .2em;
+								text-align: center;
+								font-variant: normal;
+								text-transform: none;
+								margin-left: .2em;
+							   
+							}
+							li{
+								height: 0;
+								opacity: 0;
+								filter: blur(10px);
+								width: 12em;
+							}
+						}
+						&:hover{
+							ul{
+								&:before{
+									color: rgb(255,202,88);
+								}
+								li{
+									height: auto;
+									opacity: 1;
+									filter:	none;
+									transition: height 0s 0.2s, opacity 0.2s 0s, filter 0s 0s;
+								}
+								transition: height 0s 0s, opacity 0.2s 0s, filter 0s 0s;
+							}
+						}
+					}
 				}
 			}
 			ul{
@@ -65,7 +121,7 @@ header {
 				filter: blur(10px);
 				overflow: hidden;
 				transition: height 0s 0.2s, opacity 0.2s 0s, filter 0.2s 0s;
-				li{
+				>li{
 					background: #0067B3;
 					width: em(160,14);
 					line-height: em(44,14);
@@ -78,6 +134,7 @@ header {
 
 	}
 	.member{
+		height:  em(72, 14);
 		color: rgb(123,123,123);
 		ul{
 			line-height: em(36, 14);
