@@ -1,0 +1,91 @@
+[role=search]{
+    .viewport{
+        margin: 0 auto;
+        min-height: calc(100vh - #{em(142,14)});
+        padding-top: em(28,14);
+    }
+    h3{
+        color: #0067B3;
+        margin: 0;
+        font-weight: 900;
+        font-size: em(20,14);
+    }
+    .search-form{
+        width: per(680,768);
+        margin: 0 auto;
+        form{
+            margin: em(12,14) 0 em(24,14);
+            color: #525252;
+            input,select{
+                margin: 0 em(20,14) 0 em(8,14);
+                color: inherit;
+                color: #525252;
+                display: inline-block;
+            }
+            label{
+                display: inline-block;
+            }
+        }
+    }
+    .search-result{
+        h4{
+            color: #CFCFCF;
+            font-size: em(20,14);
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 900;
+        }
+        table{
+            color: #525252;
+            margin-bottom:2em;
+            width: 100%;
+            th{
+                background: #ECECEC;
+                box-shadow: 0 1px 0 0 #B6B6B6;
+            }
+            th, td{
+                font-weight: 900;
+                line-height: em(44,14);
+                padding: 0 em(8, 14);
+                vertical-align: middle;
+            }
+            td{
+                line-height: em(52,14);
+                a{
+                    padding: em(2,14) em(10,14);
+                    background: #C9C9C9;
+                    color: #fff;
+                    border-radius: em(20,14);
+
+                }
+            }
+            tr{
+                &:nth-child(even){
+                    background: #fff;
+                }
+            }
+        }
+        h3{
+            width: per(680,768);
+            margin: 0 auto em(12,20);
+        }
+    }
+    .btn{
+        font-size: em(16,14);
+        padding: 0 em(30,16);
+        line-height: em(28,16);
+        height: em(28,16);
+        border-radius: em(20,16);
+        background: #BB925B;
+        color: #fff;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background: #fff;
+            color: #BB925B;
+            box-shadow: 0 0 0 1px #BB925B;
+        }
+    }
+}
+
