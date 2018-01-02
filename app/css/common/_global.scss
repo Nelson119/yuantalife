@@ -15,12 +15,16 @@
     font-size: $font-size-base;
 
     @media screen and (min-width: 1000px) {
-        background: #04091D;
         font-size: 16px;
+        .form-control, output{
+            font-size: 16px;
+        }
     }
     @media screen and (min-width: 1366px) {
-        background: #04091D;
         font-size: 18px;
+        .form-control, output{
+            font-size: 18px;
+        }
     }
     >*{
         opacity: 0;
