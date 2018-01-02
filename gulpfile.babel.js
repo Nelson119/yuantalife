@@ -193,6 +193,7 @@ gulp.task('embed', ['html', 'img', 'fonts', 'extras'], () => {
         .pipe($.replace(/{{date}}/ig, date))
         // .pipe($.debug())
         .pipe($.bom())
+        .pipe($.htmlBeautify({indentSize: 2}))
         .pipe(gulp.dest('dist'));
 });
 
