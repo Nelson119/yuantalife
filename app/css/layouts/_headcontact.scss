@@ -9,14 +9,16 @@
                 background: #fff;
                 padding: per(53,  568) per(38, 568);
                 width: per(186, 568);
+                text-align: center;
                 h5{
                     color: rgb(2,93,163);
                     font-weight: bold;
                     white-space: nowrap;
+                    margin: em(10,14) 0 0;
                 }
                 img{
-                    width: per(110, 110);
-                    height: per(110, 110);
+                    width: per(60, 110);
+                    height: per(60, 110);
                 }
             }
             .pull-right{
