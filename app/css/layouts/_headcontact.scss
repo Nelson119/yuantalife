@@ -1,19 +1,22 @@
 [role=headcontact]{
     .viewport{
         width: 100%;
+        min-width: 768px;
         .row{
             width: per((186+12+370) , 768);
             margin: em(32,14) auto;
             .pull-left{
                 background: #fff;
-                padding: em(53, 14) em(38,14);
+                padding: per(53,  568) per(38, 568);
+                width: per(186, 568);
                 h5{
                     color: rgb(2,93,163);
                     font-weight: bold;
+                    white-space: nowrap;
                 }
                 img{
-                    width: em(150,14);
-                    height: em(150,14);
+                    width: per(110, 110);
+                    height: per(110, 110);
                 }
             }
             .pull-right{
@@ -37,9 +40,7 @@
                     }
                     .productsvg{
                         display: inline-block;
-                        .product0{clip-path:url(#SVGID_2_);fill:rgb(187, 146, 91);}
-                        .product1{clip-path:url(#SVGID_4_);fill:rgb(187, 146, 91);}
-                        .product2{clip-path:url(#SVGID_6_);fill:rgb(187, 146, 91);}
+                        .product0{fill:rgb(187, 146, 91);}
                     }
                     .downloadsvg{
                         display: inline-block;
@@ -71,8 +72,6 @@
         .productsvg{
             display: inline-block;
             .product0{fill:#fff}
-            .product1{fill:#fff}
-            .product2{fill:#fff}
         }
         .downloadsvg{
             .download0{fill:#fff;}
