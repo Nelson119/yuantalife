@@ -9,7 +9,8 @@ var app = {};
 app.partial = {};
 
 if($ || jQuery){
-	app.$ = $.noConflict() || jQuery.noConflict();
+	// app.$ = $.noConflict() || jQuery.noConflict();
+	app.$ = $ || jQuery;
 }
 (function($){
 	$(function(){
