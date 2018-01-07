@@ -1,4 +1,10 @@
-[role=headnews]{
+[role=news]{
+    .viewport{
+        margin: 0 auto;
+        padding-top: em(28,14);
+        width: per(568,768);
+        min-height: calc(100vh - #{em(182,14)});
+    }
     h3{
         display: inline-block;
         color: rgb(0,103,179);
@@ -32,10 +38,6 @@
             color: #fff;
             background: rgb(187, 146,91);;
         }
-    }
-    .viewport{
-        width: per(568,768);
-        margin: em(44,14) auto 0;
     }
     .newslist{
         position: relative;

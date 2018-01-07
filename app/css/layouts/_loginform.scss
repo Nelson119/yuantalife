@@ -97,5 +97,23 @@
             padding: 0;
         }
     }
+    .sim{
+        .col-xs-8{
+            width: per(330, 568);
+        }
+        .form-group{
+            padding: 1em 1em 2em;
+            box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+        }
+        label{
+            line-height: em(40,14);
+            height: em(40,14);
+            margin: 0;
+            color: #7B7B7B;
+            input {
+                margin-right: 0.2em;
+            }
+        }
+    }
 }
 
