@@ -6,11 +6,15 @@
     }
     h3{
         color: #0067B3;
-        margin: 0;
         font-weight: 900;
         font-size: em(20,14);
+        width: per(680,768);
+        margin: 0 auto em(12,20);
     }
     .search-form{
+        h3{
+            margin: 0;
+        }
         width: per(680,768);
         margin: 0 auto;
         form{
@@ -65,10 +69,6 @@
                 }
             }
         }
-        h3{
-            width: per(680,768);
-            margin: 0 auto em(12,20);
-        }
     }
     .btn{
         font-size: em(16,14);
@@ -85,6 +85,20 @@
             background: #fff;
             color: #BB925B;
             box-shadow: 0 0 0 1px #BB925B;
+        }
+        &.small{
+            font-size: 1em;
+            padding: 0 em(15,14);
+            line-height: em(24,14);
+            height: em(24,14);
+            border-radius: em(20,14);
+            background: #fff;
+            color: #BB925B;
+            box-shadow: 0 0 0 1px #BB925B;
+            &:hover{
+                background: #BB925B;
+                color: #fff;
+            }
         }
     }
 }
