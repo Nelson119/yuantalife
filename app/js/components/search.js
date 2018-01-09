@@ -31,10 +31,17 @@ app.partial.search = function($, container){
             $('.goto', container).append(option);
         }
         goto();
+
+
+
         $('.next.btn', container).on('click', next);
         $('.prev.btn', container).on('click', prev);
         $('.first.btn', container).on('click', first);
         $('.last.btn', container).on('click', last);
+        $('.goto', container).on('input change', function(){
+            $('.search-result', container).data('current-page', this.value);
+            goto();
+        });
     });
     function newPage(){
         var tab = originalList.clone();
