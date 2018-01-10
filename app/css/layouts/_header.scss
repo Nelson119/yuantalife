@@ -16,7 +16,7 @@ header {
 		position: absolute;
 
 		img, svg{
-			@include SubItem();
+			@include SubImgW();
 		}
 	}
 	nav{
