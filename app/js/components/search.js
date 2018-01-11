@@ -49,7 +49,7 @@ app.partial.search = function($, container){
         return $('table', tab);
     }
 
-    function next(){
+    function next(e){
         opt = $('.search-result', container).data(); 
         if(opt.currentPage == pages.length){
             alert('已經是最後一頁');
@@ -57,9 +57,12 @@ app.partial.search = function($, container){
         }
         $('.search-result', container).data('current-page', opt.currentPage + 1);
         goto();
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
     }
 
-    function prev(){
+    function prev(e){
         opt = $('.search-result', container).data(); 
         if(opt.currentPage == 1){
             alert('已經是第一頁');
@@ -67,16 +70,25 @@ app.partial.search = function($, container){
         }
         $('.search-result', container).data('current-page', opt.currentPage - 1);
         goto();
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
     }
 
-    function first(){
+    function first(e){
         $('.search-result', container).data('current-page', 1);
         goto();
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
     }
 
-    function last(){
+    function last(e){
         $('.search-result', container).data('current-page', pages.length);
         goto();
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
     }
 
     function goto(idx){
