@@ -39,7 +39,7 @@ app.partial.search = function($, container){
         $('.first.btn', container).on('click', first);
         $('.last.btn', container).on('click', last);
         $('.goto', container).on('input change', function(){
-            $('.search-result', container).data('current-page', this.value);
+            $('.search-result', container).data('current-page', this.value * 1);
             goto();
         });
     });
@@ -51,11 +51,12 @@ app.partial.search = function($, container){
 
     function next(e){
         opt = $('.search-result', container).data(); 
-        if(opt.currentPage == pages.length){
+        var currentPage = opt.currentPage * 1;
+        if(currentPage == pages.length){
             alert('已經是最後一頁');
             return;
         }
-        $('.search-result', container).data('current-page', opt.currentPage + 1);
+        $('.search-result', container).data('current-page', currentPage + 1);
         goto();
         e.preventDefault();
         e.stopPropagation();
@@ -64,11 +65,12 @@ app.partial.search = function($, container){
 
     function prev(e){
         opt = $('.search-result', container).data(); 
-        if(opt.currentPage == 1){
+        var currentPage = opt.currentPage * 1;
+        if(currentPage == 1){
             alert('已經是第一頁');
             return;
         }
-        $('.search-result', container).data('current-page', opt.currentPage - 1);
+        $('.search-result', container).data('current-page', currentPage - 1);
         goto();
         e.preventDefault();
         e.stopPropagation();
@@ -92,10 +94,11 @@ app.partial.search = function($, container){
     }
 
     function goto(idx){
+        var currentPage = opt.currentPage * 1;
         opt = $('.search-result', container).data(); 
-        $('.search-result').html(pages[opt.currentPage - 1]);
+        $('.search-result').html(pages[currentPage - 1]);
         $('.goto', container).each(function(){
-            $('option', this).eq(opt.currentPage - 1)[0].selected = true;
+            $('option', this).eq(currentPage - 1)[0].selected = true;
         });
     }
 };
