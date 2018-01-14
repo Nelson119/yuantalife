@@ -1,7 +1,7 @@
 [role=slick]{
     .viewport{
         width: 100%;
-        max-width: 1140px;
+        width: per(568,768);
         min-width: 768px;
         margin: em(32,14) auto 0;
         a{
