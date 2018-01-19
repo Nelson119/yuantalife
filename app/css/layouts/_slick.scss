@@ -1,24 +1,37 @@
 [role=slick]{
+    min-width: 768px;
     .viewport{
-        width: 100%;
-        width: per(568,768);
+        max-width: per(1100, 1366);
         min-width: 768px;
+        padding-top: per(290, 1100);
         margin: em(32,14) auto 0;
+        .slick-list{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            .slick-track, .slick-slide{
+                height: 100%;
+            }
+        }
         a{
+            height: 100%;
             position: relative;
-            display: block;
-            // width: per(556, 768); 
-            // width: 50vw;
-            // max-width: 1366;
+            text-align: center;
             img{
-                width: 50%;
-                width: 50vw;
-                max-width: 1366;
+                height: 100%;
+                display: inline-block;
+                width: auto;
             }
         }
         .slick-slide{
+            // width: per(568,768);
             opacity: 0.2;
             transition-duration: 0.3s;
+            position: relative;
+            >div{
+                height: 100%;
+            }
             &.slick-active{
                 opacity: 1;
             }
