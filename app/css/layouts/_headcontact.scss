@@ -3,12 +3,12 @@
         width: 100%;
         min-width: 768px;
         .row{
-            width: per((186+12+370) , 768);
+            width: per(568 , 768);
             margin: em(32,14) auto;
             .pull-left{
                 background: #fff;
-                padding: per(53,  568) per(38, 568);
-                width: per(186, 568);
+                padding: per(30,  568) per(10, 568);
+                width: per(100, 568);
                 text-align: center;
                 h5{
                     color: rgb(2,93,163);
@@ -22,7 +22,7 @@
                 }
             }
             .pull-right{
-                width: per(370 , (186+12+370));
+                width: per(456 , 568);
             }
             nav{
                 border-bottom: 2px solid rgb(187, 146, 91);
