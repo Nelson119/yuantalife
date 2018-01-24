@@ -17,8 +17,7 @@
       "main": [
         "slick/fonts/*",
         "slick/slick.js",
-        "slick/slick.scss",
-        "slick/slick-theme.scss"
+        "slick/slick.scss"
       ]
     },
     "font-awesome": {
