@@ -10,7 +10,8 @@
     "jquery": "1.12",
     "animate.css": "^3.5.2",
     "slick-carousel": "^1.8.1",
-    "venobox": "^1.8.2"
+    "venobox": "^1.8.2",
+    "html5-placeholder-polyfill": "^2.1.0"
   },
   "overrides": {
     "slick-carousel": {
