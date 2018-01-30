@@ -11,7 +11,7 @@
     "animate.css": "^3.5.2",
     "slick-carousel": "^1.8.1",
     "venobox": "^1.8.2",
-    "html5-placeholder-polyfill": "^2.1.0"
+    "placeholders": "^4.0.1"
   },
   "overrides": {
     "slick-carousel": {
@@ -30,12 +30,6 @@
     },
     "gsap": {
       "main": "./src/minified/TweenMax.min.js"
-    },
-    "html5-placeholder-polyfill":{
-      "main": [
-        "./dist/placeholder_polyfill.jquery.min.combo.js", 
-        "./dist/placeholder_polyfill.min.css"
-      ]
     }
   },
   "devDependencies": {
