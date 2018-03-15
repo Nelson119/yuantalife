@@ -77,15 +77,15 @@
         line-height: em(28,16);
         height: em(28,16);
         border-radius: em(20,16);
-        background: #BB925B;
+        background: #00538F;
         color: #fff;
         &:focus{
             outline: none;
         }
         &:hover{
             background: #fff;
-            color: #BB925B;
-            box-shadow: 0 0 0 1px #BB925B;
+            color: #00538F;
+            box-shadow: 0 0 0 1px #00538F;
         }
         &.small{
             font-size: 1em;
@@ -94,10 +94,10 @@
             height: em(24,14);
             border-radius: em(20,14);
             background: #fff;
-            color: #BB925B;
-            box-shadow: 0 0 0 1px #BB925B;
+            color: #00538F;
+            box-shadow: 0 0 0 1px #00538F;
             &:hover{
-                background: #BB925B;
+                background: #00538F;
                 color: #fff;
             }
         }
