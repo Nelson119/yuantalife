@@ -2,13 +2,24 @@ footer {
     position: relative;
     color: #fff;
     padding-top: em(10, 14);
+    font-size: em(14, 16);
     overflow: hidden;
     aside{
-        height: em(60, 14);
-        padding: em(12, 14) 0;
+        height: em(80, 14);
+        padding: em(22, 14) 0;
         position: relative;
         background: rgb(0,146,229);
         z-index: 1;
+        &:after{
+            content: '';
+            width:em(93, 14);
+            height: em(52, 14);
+            right: 0;
+            top: 0;
+            margin: em(14, 14) em(36, 14) auto auto;
+            position: absolute;
+            background:url(../img/twca.png) center/100%;
+        }
     }
     &:after{
         content: '';

@@ -14,16 +14,16 @@
     font-family: $font-family-sans-serif;
     font-size: $font-size-base;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1024px) {
+        font-size: 14px;
+        .form-control, output{
+            font-size: 14px;
+        }
+    }
+    @media screen and (min-width: 1367px) {
         font-size: 16px;
         .form-control, output{
             font-size: 16px;
-        }
-    }
-    @media screen and (min-width: 1366px) {
-        font-size: 18px;
-        .form-control, output{
-            font-size: 18px;
         }
     }
     >*{
@@ -77,7 +77,7 @@
         }
     }
     .btn{
-        font-size: em(16,14);
+        font-size: em(16,16);
         padding: 0 em(30,16);
         line-height: em(28,16);
         height: em(28,16);
@@ -93,11 +93,11 @@
             box-shadow: 0 0 0 1px #BB925B;
         }
         &.small{
-            font-size: 1em;
-            padding: 0 em(15,14);
-            line-height: em(24,14);
-            height: em(24,14);
-            border-radius: em(20,14);
+            font-size: em(14,16);
+            padding: 0 em(15,16);
+            line-height: em(24,16);
+            height: em(24,16);
+            border-radius: em(20,16);
             background: #fff;
             color: #BB925B;
             box-shadow: 0 0 0 1px #BB925B;

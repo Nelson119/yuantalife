@@ -1,9 +1,12 @@
 [role=loginform]{
     .viewport{
-        width: per(568,768);
+        width: 746px;
         margin: 0 auto;
         min-height: calc(100vh - #{em(142,14)});
         padding-top: em(32,14);
+        @media screen and (max-width: 1366px) {
+            width: 568px;
+        }
     }
     form{
         background: #fff;
@@ -15,9 +18,9 @@
 
         h3{
             border-radius: em(12,22) em(12,22) 0 0;
-            margin: 0 auto em(32,14);
+            margin: 0 auto em(32,16);
             line-height: em(48,22);
-            font-size: em(22,14);
+            font-size: em(22,16);
             color: #fff;
             text-align: center;
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#073c7c+0,1076b8+100 */
@@ -28,13 +31,13 @@
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073c7c', endColorstr='#1076b8',GradientType=1 ); /* IE6-9 */
         }
         .form-group{
-            margin-bottom: em(12,14);
+            margin-bottom: em(12,16);
         }
         .col-form-label{
             width: per(144,568);
             text-align: right;
-            line-height: em(40,14);
-            height: em(40,14);
+            line-height: em(40,16);
+            height: em(40,16);
             margin: 0;
             color: #7B7B7B;
         }
@@ -43,7 +46,7 @@
         }
         input[type=text], input[type=password]{
             line-height: em(14,40);
-            padding: 0 em(12,14);
+            padding: 0 em(12,16);
             box-shadow: 0 1px 0 0 #F2F2F2;
             &:focus{
                 box-shadow: 0 2px 0 0 #BB925B;

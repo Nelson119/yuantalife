@@ -12,22 +12,32 @@
             background: rgb(247,247,247);
             display: inline-block;
         }
+        @media screen and (min-width: 1024px) {
+            font-size: em(20,14);
+        }
     }
     p{
         color: rgb(123,123,123);
         b{
             color: #000;
-            font-size: em(18,14);
+            font-size: em(20,16);
             &:nth-child(1){
-                margin-right: em(41,14);
+                margin-right: em(100,16);
+            }
+            @media screen and (min-width: 1024px) {
+                font-size: em(18,14);
             }
         }
     }
     .viewport{
+        max-width: 800px;
         width: per(568,768);
         margin: em(44,14) auto 0;
         padding: em(25,14) 0 em(13,14);
         border: 1px solid rgb(187, 146,91);
+        @media screen and (min-width: 1024px) {
+            max-width: 624px;
+        }
     }
 }
 

@@ -12,6 +12,9 @@
         margin: 0 auto em(12,20);
     }
     .search-form{
+        @media screen and (max-width: 1366px) {
+            font-size: 14px;
+        }
         h3{
             margin: 0;
         }
@@ -29,6 +32,7 @@
             label{
                 display: inline-block;
             }
+           
         }
     }
     .search-result{
@@ -43,9 +47,14 @@
             color: #525252;
             margin-bottom:2em;
             width: 100%;
+            @media screen and (max-width: 1366px) {
+                font-size: 12px;
+            }
             th{
-                background: #ECECEC;
-                box-shadow: 0 1px 0 0 #B6B6B6;
+                background: rgb(187, 146, 91);
+                // box-shadow: 0 1px 0 0 #B6B6B6;
+                color: #fff;
+                font-weight: normal;
             }
             th, td{
                 font-weight: 900;
@@ -57,7 +66,7 @@
                 line-height: em(52,14);
                 a{
                     padding: em(2,14) em(10,14);
-                    background: #525252;
+                    background: rgb(120,120,120);
                     color: #fff;
                     border-radius: em(20,14);
                     white-space: nowrap;
@@ -77,15 +86,15 @@
         line-height: em(28,16);
         height: em(28,16);
         border-radius: em(20,16);
-        background: #00538F;
+        background: rgb(187, 146, 91);
         color: #fff;
         &:focus{
             outline: none;
         }
         &:hover{
             background: #fff;
-            color: #00538F;
-            box-shadow: 0 0 0 1px #00538F;
+            color: rgb(187, 146, 91);
+            box-shadow: 0 0 0 1px rgb(187, 146, 91);
         }
         &.small{
             font-size: 1em;
@@ -94,10 +103,10 @@
             height: em(24,14);
             border-radius: em(20,14);
             background: #fff;
-            color: #00538F;
-            box-shadow: 0 0 0 1px #00538F;
+            color: rgb(187, 146, 91);
+            box-shadow: 0 0 0 1px rgb(187, 146, 91);
             &:hover{
-                background: #00538F;
+                background: rgb(187, 146, 91);
                 color: #fff;
             }
         }

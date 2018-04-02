@@ -37,14 +37,14 @@ Consolas,
 'Courier New',
 monospace !default;
 $font-family-base: $font-family-sans-serif !default;
-$font-size-base-num: 14;
-$font-size-base: 14px;
-$font-size-large: 14px; // ~18px
+$font-size-base-num: 16;
+$font-size-base: 16px;
+$font-size-large: 16px; // ~18px
 $font-size-small: 12px; // ~16px
 $font-size-h1: percentage(20/$font-size-base-num); 
 $font-size-h2: percentage(20/$font-size-base-num); 
 $font-size-h3: percentage(22/$font-size-base-num); 
-$font-size-h4: percentage(20/$font-size-base-num); 
+$font-size-h4: percentage(24/$font-size-base-num); 
 $font-size-h5: percentage(18/$font-size-base-num); 
 $font-size-h6: percentage(14/$font-size-base-num); 
 body {

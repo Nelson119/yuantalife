@@ -1,63 +1,59 @@
 [role=headnews]{
-    h3{
-        display: inline-block;
-        color: rgb(0,103,179);
-        font-weight: bold;
-        padding-right: em(24,22);
-        margin: 0;
-    }
     nav{
         border-bottom: 1px solid rgb(224,224,224);
+        padding: 0 em(12,16);
         // padding-bottom: em(9,14);
         label{
             font-weight: bold;
             cursor: pointer;
-            font-size: em(16,14);
+            font-size: em(18,16);
             color: rgb(123,123,123);
-            padding-bottom: em(8,16);
+            padding-bottom: em(4,16);
             margin-bottom: 0;
             &+label{
-                margin-left: em(20,16);
+                margin-left: em(22,18);
             }
-        }
-        a{
-            font-size: em(12,14);
-            position: absolute;
-            padding: em(2,12) 0;
-            text-align: center;
-            border-radius: em(16,12);
-            width: em(48,12);
-            top: em(10, 12);
-            right: 0;
-            color: #fff;
-            background: rgb(187, 146,91);;
+            @media screen and (min-width: 1024px) {
+                font-size: em(18,14);
+            }
         }
     }
     .viewport{
-        width: per(568,768);
+        width: 1024px;
         margin: em(44,14) auto 0;
+        @media screen and (min-width: 1024px) {
+            width: 888px;
+        }
     }
     .newslist{
         position: relative;
         margin-top: em(15,14);
         min-height: em(192,14);
-        img{
+        .news-icon{
             position: absolute;
-            top: 0;
+            top: em(14, 16);
             left: 0;
-            width: em(68,14);
-            height: em(64, 14);
+            width: 132px;
+            height: auto;
+            text-align: center;
+            img{
+                opacity: 0;
+                transition-duration: 0.2s;
+            }
         }
         ul{
-            margin-left: em(88,12);
+            margin-left: em(132,12);
             color: rgb(123,123,123);
-            font-size: em(12,14);
+            font-size: em(12,16);
             height: 0;
             opacity: 0;
             filter: blur(2px);
             transition-property: opacity filter;
             transition-duration: 0.3s;
             overflow: hidden;
+            @media screen and (min-width: 1024px) {
+                font-size: em(12,14);
+            }
 
             li{
                 padding: em(8,12) 0 em(9,12);
@@ -74,24 +70,47 @@
                         top: em(13,12);
                         right: em(3,12);
                     }
+                    b{
+                        margin-right: em(40 ,14);
+                    }
+                    small{
+                        &+b{
+                            width: calc(100% - 7em - #{em(40 ,14)});
+                        }
+                    }
                 }
             }
             b{
                 font-size: em(14,12);
                 color: #000;
-                margin-left: em(78 ,14);
-                margin-right: em(40 ,14);
+                margin-left: em(0 ,14);
                 display: inline-block;
             }
             small{
-                position: absolute;
+                // position: absolute;
+                color: rgb(123,123,123);
+                display: inline-block;
+                width: 7em;
+                vertical-align: top;
+                &+b{
+                    width: calc(100% - 7em);
+                }
             }
         }
     }
 
     #newsTab1:checked ~ .newslist [data-for=newsTab1],
     #newsTab2:checked ~ .newslist [data-for=newsTab2],
-    #newsTab3:checked ~ .newslist [data-for=newsTab3]{
+    #newsTab3:checked ~ .newslist [data-for=newsTab3],
+    #newsTab4:checked ~ .newslist [data-for=newsTab4],
+    #newsTab5:checked ~ .newslist [data-for=newsTab5],
+    #newsTab6:checked ~ .newslist [data-for=newsTab6],
+    #newsTab1:checked ~ .newslist [for=newsTab1],
+    #newsTab2:checked ~ .newslist [for=newsTab2],
+    #newsTab3:checked ~ .newslist [for=newsTab3],
+    #newsTab4:checked ~ .newslist [for=newsTab4],
+    #newsTab5:checked ~ .newslist [for=newsTab5],
+    #newsTab6:checked ~ .newslist [for=newsTab6]{
         transition-property: opacity;
         opacity: 1;
         filter: none;
@@ -99,9 +118,19 @@
     }
     #newsTab1:checked ~ nav [for=newsTab1],
     #newsTab2:checked ~ nav [for=newsTab2],
-    #newsTab3:checked ~ nav [for=newsTab3]{
-        color: #000;
+    #newsTab3:checked ~ nav [for=newsTab3],
+    #newsTab4:checked ~ nav [for=newsTab4],
+    #newsTab5:checked ~ nav [for=newsTab5],
+    #newsTab6:checked ~ nav [for=newsTab6]{
+        color: rgb(2,93,163);
+        font-size: em(22,16);
         border-bottom: 2px solid rgb(2,93,163);
+        @media screen and (min-width: 1024px) {
+            font-size: em(22,14);
+        }
+        &+label{
+            margin-left: em(26,22);
+        }
     }
 }
 
