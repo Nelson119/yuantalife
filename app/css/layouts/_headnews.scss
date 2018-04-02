@@ -17,6 +17,18 @@
                 font-size: em(18,14);
             }
         }
+        a{
+            font-size: em(12,14);
+            position: absolute;
+            padding: em(2,12) 0;
+            text-align: center;
+            border-radius: em(16,12);
+            width: em(48,12);
+            top: em(10, 12);
+            right: 0;
+            color: #fff;
+            background: rgb(187, 146,91);;
+        }
     }
     .viewport{
         width: 1024px;
